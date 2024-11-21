@@ -8,8 +8,8 @@ const NavbarSection: React.FC = () => {
     }
 
     return (
-        <header className="bg-primary text-white">
-            <div className="container flex justify-between items-center p-4">
+        <header className="bg-primary text-white px-8 fixed top-0 w-full">
+            <div className="container flex justify-between items-center py-4">
                 {/* Logo */}
                 <div className="text-2xl font-bold">Mohammad</div>
 
@@ -23,9 +23,9 @@ const NavbarSection: React.FC = () => {
                 {/* Toggle menu */}
                 <div className="md:hidden" onClick={toggleMenu}>
                     <div className={`hamburger ${isOpen ? 'open' : ''}`}>
-                        <span className="bar origin-top-left transition duration-300 ease-in-out"></span>
-                        <span className="bar transition duration-300 ease-in-out"></span>
-                        <span className="bar origin-bottom-left transition duration-300 ease-in-out"></span>
+                        <span className="bar origin-top-left transition-all duration-300 ease-in-out"></span>
+                        <span className="bar transition-all duration-300 ease-in-out"></span>
+                        <span className="bar origin-bottom-left transition-all duration-300 ease-in-out"></span>
                     </div>
                 </div>
             </div>
@@ -33,9 +33,9 @@ const NavbarSection: React.FC = () => {
             {/* Nav menu for mobile */}
             <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-primary`}>
                 <nav className="flex flex-col items-center space-y-4 py-4">
-                    <a href="#home" className="hover:text-neutral-light">Home</a>
-                    <a href="#projects" className="hover:text-neutral-light">Projects</a>
-                    <a href="#contact" className="hover:text-neutral-light">Contact Me</a>
+                    <a href="#home" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>Home</a>
+                    <a href="#projects" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>Projects</a>
+                    <a href="#contact" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>Contact Me</a>                    
                 </nav>
             </div>
         </header>
