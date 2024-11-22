@@ -1,22 +1,25 @@
 import React from "react"
-import Card from "../composites/Card";
+import ProjectsCard from "../composites/ProjectsCard";
 
 const PortfolioSection: React.FC = () => {
     const portfolioItems = [
         {
-          title: 'Project 1',
-          description: 'Deskripsi singkat tentang Project 1.',
-          imageUrl: 'https://via.placeholder.com/150',
+          title: 'Website Portfolio',
+          description: 'Deskripsi singkat tentang project Website Portfolio.',
+          imageUrl: "src/assets/images/portfolio.png",
+          linkTo: '/'
         },
         {
-          title: 'Project 2',
-          description: 'Deskripsi singkat tentang Project 2.',
-          imageUrl: 'https://via.placeholder.com/150',
+          title: 'TodoList App with Redux',
+          description: 'Deskripsi singkat tentang project TodoList App with Redux.',
+          imageUrl: 'src/assets/images/todolist.png',
+          linkTo: '/todolist'
         },
         {
-            title: 'Project 3',
-            description: 'Deskripsi singkat tentang Project 3.',
-            imageUrl: 'https://via.placeholder.com/150',
+            title: 'Products from Fake Store API',
+            description: 'Deskripsi singkat tentang project Products from Fake Store API.',
+            imageUrl: 'src/assets/images/products-list.png',
+            linkTo: '/products'
           },          
         // Tambahkan lebih banyak item sesuai kebutuhan
       ];
@@ -28,11 +31,12 @@ const PortfolioSection: React.FC = () => {
                 <h1 className="text-3xl font-bold text-center mb-8 text-primary">Mini Projects</h1>
                 <div className="flex flex-wrap justify-center">
                 {portfolioItems.map((item, index) => (
-                    <Card
+                    <ProjectsCard
                     key={index}
                     title={item.title}
                     description={item.description}
                     imageUrl={item.imageUrl}
+                    linkTo={item.linkTo}
                     />
                 ))}
                 </div>

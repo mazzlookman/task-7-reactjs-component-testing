@@ -7,7 +7,7 @@ const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
+    alert('Pesan berhasil dikirim ke email saya')
     console.log({ name, email, message });
   };
 

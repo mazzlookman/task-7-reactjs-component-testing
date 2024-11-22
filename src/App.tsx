@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage'
 import TodoListPage from './pages/TodoListPage'
 import { Provider } from 'react-redux'
 import { store } from './redux/store';
+import { ProductPage } from './pages/ProductPage';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <HomePage /> } />
           <Route path='/todolist' element={ <TodoListPage /> } />
+          <Route path='/products' element={ <ProductPage /> } />
         </Routes>
       </Router>
     </Provider>    

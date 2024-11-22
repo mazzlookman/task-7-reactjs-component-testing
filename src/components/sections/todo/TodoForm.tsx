@@ -1,7 +1,7 @@
 // src/components/organisms/TodoForm.tsx
 import React, { useState } from 'react';
-import Input from '../../bases/Input';
-import Button from '../../bases/Button';
+import Input from '../../bases/todo/Input';
+import Button from '../../bases/todo/Button';
 
 interface TodoFormProps {
   onAddTodo: (text: string) => void;
