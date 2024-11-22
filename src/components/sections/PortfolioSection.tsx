@@ -7,7 +7,7 @@ const PortfolioSection: React.FC = () => {
           title: 'Website Portfolio',
           description: 'Deskripsi singkat tentang project Website Portfolio.',
           imageUrl: "src/assets/images/portfolio.png",
-          linkTo: '/'
+          linkTo: '#home'
         },
         {
           title: 'TodoList App with Redux',
