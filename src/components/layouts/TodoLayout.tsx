@@ -1,4 +1,3 @@
-// src/components/templates/TodoTemplate.tsx
 import React from 'react';
 import TodoForm from '../sections/todo/TodoForm';
 import TodoList from '../sections/todo/TodoList';
