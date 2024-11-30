@@ -6,7 +6,6 @@ import { store } from './redux/store';
 import { ProductPage } from './pages/ProductPage';
 
 function App() {
-
   return (
     <Provider store={ store }>
       <Router>

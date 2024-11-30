@@ -24,7 +24,7 @@ const TodoLayout: React.FC<TodoLayoutProps> = ({ todos, onAddTodo, onToggleTodo,
         <TodoList todos={todos} onToggleTodo={onToggleTodo} onDeleteTodo={onDeleteTodo} />        
     </div>
     <div className='flex gap-4 mt-4'>
-        <span>Todal todo: {todosStore.length}</span>
+        <span>Total todo: {todosStore.length}</span>
         <span>Selesai: {todosStore.filter((todo) => todo.completed).length}</span>
     </div>
   </div>
