@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CreateProduct } from "../../api/api-service";
+import { CreateProduct } from "../../api/api-service.ts";
 import { InputWithLabel } from "../bases/InputWithLabel.tsx";
 import Button from "../bases/Button.tsx";
 

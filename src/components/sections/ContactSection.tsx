@@ -12,7 +12,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-        <div className="bg-neutral-light px-8 mt-6" id='contact'>
+        <div className="bg-neutral-light px-8 mt-6" id='contact' data-testid={"contact-section"}>
             <div className="container py-12">
                 <h2 className="text-2xl font-bold mb-6 text-center text-primary">Contact Me</h2>
                     <div className="max-w-md mx-auto p-8 rounded-lg shadow-md bg-white">

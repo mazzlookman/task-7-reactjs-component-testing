@@ -26,7 +26,7 @@ const PortfolioSection: React.FC = () => {
 
     return (
         <>
-          <div className="px-8 pt-24" id="projects">          
+          <div className="px-8 pt-24" id="projects" data-testid={"portfolio-section"}>
             <div className="container">
                 <h1 className="text-3xl font-bold text-center mb-8 text-primary">Mini Projects</h1>
                 <div className="flex flex-wrap justify-center">

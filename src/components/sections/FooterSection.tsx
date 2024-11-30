@@ -3,7 +3,7 @@ import 'boxicons';
 
 const FooterSection: React.FC = () => {
   return (
-    <footer className="bg-neutral-dark text-white py-6 px-8">
+    <footer className="bg-neutral-dark text-white py-6 px-8" data-testid={"footer-section"}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-sm">
           © {new Date().getFullYear()} MyPortfolio. All rights reserved.

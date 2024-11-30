@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { createProduct, CreateProduct, fetchProducts } from "../api/api-service";
+import { createProduct, CreateProduct, fetchProducts } from "../api/api-service.ts";
 import { Link } from "react-router-dom";
 import { Product, ProductListSection } from "../components/sections/ProductListSection";
 import { ProductFormSection } from "../components/sections/ProductFormSection";

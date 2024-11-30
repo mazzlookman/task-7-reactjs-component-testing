@@ -8,13 +8,11 @@ import FooterSection from "../components/sections/FooterSection";
 const HomePage: React.FC = () => {
     return (
         <>
-        {/* <div className="relative"> */}
             <NavbarSection />
             <HeroSection />
             <PortfolioSection />
             <ContactSection />
             <FooterSection />
-        {/* </div>             */}
         </>
     )
 }

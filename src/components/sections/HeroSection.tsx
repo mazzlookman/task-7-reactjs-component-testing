@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection: React.FC = () => {
     return (
-        <div className="bg-neutral-light pb-16 px-8 pt-36" id="home">
+        <div className="bg-neutral-light pb-16 px-8 pt-36" id="home" data-testid={"hero-section"}>
             <div className="container flex flex-col items-center md:flex-row md:justify-around lg:flex-row-reverse">
                 {/* Image */}
                 <div className="flex-shrink-0 mb-6 md:mb-0">

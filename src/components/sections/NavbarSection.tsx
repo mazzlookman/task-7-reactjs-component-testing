@@ -8,7 +8,7 @@ const NavbarSection: React.FC = () => {
     }
 
     return (
-        <header className="bg-primary text-white px-8 fixed top-0 w-full">
+        <header className="bg-primary text-white px-8 fixed top-0 w-full" data-testid="navbar-section">
             <div className="container flex justify-between items-center py-4">
                 {/* Logo */}
                 <div className="text-2xl font-bold">Mohammad</div>
