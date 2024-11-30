@@ -14,14 +14,14 @@ const NavbarSection: React.FC = () => {
                 <div className="text-2xl font-bold">Mohammad</div>
 
                 {/* Nav menu for md screens and above */}
-                <nav className="hidden md:flex space-x-4">
+                <nav className="hidden md:flex space-x-4" aria-label={"Desktop Navigation"}>
                     <a href="#home" className="hover:text-neutral-light">Home</a>
                     <a href="#projects" className="hover:text-neutral-light">Projects</a>
                     <a href="#contact" className="hover:text-neutral-light">Contact Me</a>
                 </nav>
 
                 {/* Toggle menu */}
-                <div className="md:hidden" onClick={toggleMenu}>
+                <div role={"button"} className="md:hidden" onClick={toggleMenu}>
                     <div className={`hamburger ${isOpen ? 'open' : ''}`}>
                         <span className="bar origin-top-left transition-all duration-300 ease-in-out"></span>
                         <span className="bar transition-all duration-300 ease-in-out"></span>
@@ -31,9 +31,9 @@ const NavbarSection: React.FC = () => {
             </div>
 
             {/* Nav menu for mobile */}
-            <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-primary`}>
+            <div role={"navigation"} className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-primary`} aria-label="Mobile Navigation">
                 <nav className="flex flex-col items-center space-y-4 py-4">
-                    <a href="#home" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>Home</a>
+                    <a href="#home" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu} aria-label={"Home"}>Home</a>
                     <a href="#projects" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>Projects</a>
                     <a href="#contact" className={`hover:text-neutral-light ${!isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>Contact Me</a>                    
                 </nav>

@@ -12,7 +12,10 @@ export const ProductFormSection: React.FC<ProductFormProps> = ({ onSubmit }) => 
     const [price, setPrice] = useState(0);
     const [image, setImage] = useState('');
 
-    const handleSubmit = () => {
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (title === "" || price <= 0) return;
+
         onSubmit({ title, price, image });
         setTitle('');
         setPrice(0);
