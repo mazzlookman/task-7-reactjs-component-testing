@@ -1,19 +1,21 @@
 import React from 'react';
 
 interface TodoItemProps {
+  key: string;
   text: string;
   completed: boolean;
   onToggle: () => void;
   onDelete: () => void;
 }
 
-const TodoItem: React.FC<TodoItemProps> = ({ text, completed, onToggle, onDelete }) => {
+const TodoItem: React.FC<TodoItemProps> = ({ text, completed, key, onToggle, onDelete }) => {
   return (
     <div className="flex items-center justify-between p-3 border rounded-lg shadow-sm bg-gray-50 hover:bg-gray-100">
       <div className='flex gap-4 items-center'>
-          <input type='checkbox' name='toggle' id='toggle' onClick={onToggle} className='cursor-pointer h-4 w-4' />
-          <label                    
+          <input type='checkbox' name={key} id={key} onClick={onToggle} className='cursor-pointer h-4 w-4' />
+          <label
             className={`${completed ? 'line-through text-gray-500' : ''}`}
+            htmlFor={key}
           >
           {text}
           </label>
