@@ -1,29 +1,31 @@
-# [Task 6] ReactJS Router
+# [Task 7] ReactJS Testing, Component Testing
 
-Membuat website Portfolio menggunakan ReactJS (beserta fitur-fitur pada ReactJS seperti useEffect, useState dan lainnya). CSS framework, Tailwind CSS.
+Implementasi pengujian komponen (Component Testing) dan Continuous Integration/Continuous Deployment (CI/CD) pipeline menggunakan GitHub Actions, 
+pada website portfolio yang sudah dibuat pada Task 6 (https://github.com/mazzlookman/task-6-react-js-router).
 
-# Pages
-Ada 3 pages pada project ini:
-1. `http://localhost:5173`: Landing page portfolio.
-2. `http://localhost:5173/todolist`: Simple Todolist App with Redux.
-3. `http://localhost:5173/products`: Show products list from Fake API Store.
+# Unit test
+All components testing are exist in `src/tests/` directory.
 
-**Note:** Link navigasinya ada di title mini projects pada masing-masing card.
+How to run?
+```shell
+npm install
+```
 
-# How to run?
-- Create empty directory first.
-  
-- Clone this repository:
-  ```sh
-  git clone https://github.com/mazzlookman/task-6-react-js-router.git .
-  ```
-  
-- Install dependencies
-  ```sh
-  npm install
-  ```
+```shell
+npm test
+```
 
-- Run server
-  ```sh
-  npm run dev
-  ```
+With coverage:
+```shell
+npm test -- --coverage
+```
+
+![coverage-test](public/images/coverage.png)
+
+
+# How to run this project?
+You can check out the steps at the following repository bellow:
+https://github.com/mazzlookman/task-6-react-js-router
+
+Thanks. ✨
+
